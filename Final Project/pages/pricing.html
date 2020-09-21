@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/pricing.css" rel="stylesheet" />
+    <title>Pricing</title>
+  </head>
+  <body>
+    <header>
+      <h1>Floyd's Good Dog Kennels</h1>
+      <div class="menu-toggle" id="menuToggle">
+        <img
+          class="hamburger"
+          id="mobile-nav-open"
+          src="/assets/misc/hamburger-icon.PNG"
+        />
+      </div>
+      <aside class="mobile-nav-container" id="mobile-nav-container">
+        <ul class="mobile-nav-items" id="mobile-nav-items">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About Us</a></li>
+          <li><a href="/pages/hours.html">Hours of Operation</a></li>
+          <li><a href="/pages/contact.html">Contact Us</a></li>
+          <span class="close-mobile-nav">X</span>
+        </ul>
+      </aside>
+    </header>
+    <div class="bigNavContainer">
+      <ul class="tab-and-desk-nav-items" id="bigNavItems">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/hours.html">Hours of Operation</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <main>
+      <h2>Pricing</h2>
+      <p class="service">Boarding</p>
+      <div class="servicesContainer">
+        <div class="item" id="boardItem">
+          <p class="left">Dogs</p>
+          <p>$30</p>
+        </div>
+        <div class="item" id="boardItem">
+          <p class="left">Cats</p>
+          <p>$20</p>
+        </div>
+        <div class="item">
+          <p class="left">Caged Pets</p>
+          <p>$15</p>
+        </div>
+        <p class="service grooming">Grooming</p>
+        <div>
+          <p class="grooming-subsection">Baths</p>
+          <p class="addendum">
+            includes ear cleaning, nail trim, brushing & drying.
+          </p>
+          <!-- Accordian Section for mobile and tablet -->
+          <div class="accordion">
+            <div class="accordion-panel">
+              <p class="accordion-header">Small Dogs</p>
+              <div class="accordion-body">
+                <div class="accordion-flex">
+                  <p class="description">Includes dogs up to 20lbs.</p>
+                  <p class="price">$20</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <p class="accordion-header">Medium Dogs</p>
+              <div class="accordion-body">
+                <div class="accordion-flex">
+                  <p class="description">Includes dogs up to 50lbs.</p>
+                  <p class="price">$25</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-panel">
+              <p class="accordion-header">Large Dogs</p>
+              <div class="accordion-body">
+                <div class="accordion-flex">
+                  <p class="description">Includes dogs above 51lbs.</p>
+                  <p class="price">$30</p>
+                </div>
+              </div>
+            </div>
+            <p class="addendum">
+              Dogs with fleas will be charged an additional $10 for flea
+              dipping.
+            </p>
+            <p class="grooming-subsection second-subsection">Hair Cuts</p>
+            <div class="accordion-panel">
+              <p class="accordion-header">Sanitary Cut</p>
+              <div class="accordion-body">
+                <div class="accordion-flex">
+                  <p class="description">
+                    Includes bath, ear cleaning, nail trim, light scissoring of
+                    feet, rear & belly dog grooming.
+                  </p>
+                  <p class="price">Starts at $35</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- unique section for desktop -->
+          <div class="unique-desktop">
+            <div class="unique-image">
+              <img
+                class="inside-unique"
+                src="/assets/pricing-photos/small-dog.jpg"
+              />
+              <p class="unique-header">Small Dogs</p>
+              <span class="unique-body">
+                <p class="description">Includes dogs up to 20lbs.</p>
+                <p class="price">$20</p>
+              </span>
+            </div>
+            <div class="unique-image">
+              <img
+                class="inside-unique"
+                src="/assets/pricing-photos/medium-dog.jpg"
+              />
+              <p class="unique-header">Medium Dogs</p>
+              <span class="unique-body"
+                ><p class="description">Includes dogs up to 50lbs.</p>
+                <p class="price">$25</p>
+              </span>
+            </div>
+            <div class="unique-image">
+              <img
+                class="inside-unique"
+                src="/assets/pricing-photos/large-dog.jpg"
+              />
+              <p class="unique-header">Large Dogs</p>
+              <span class="unique-body"
+                ><p class="description">Includes dogs above 51lbs.</p>
+                <p class="price">$30</p>
+              </span>
+            </div>
+          </div>
+          <p class="unique-desktop addendum addendum-desktop">
+            Dogs with fleas will be charged an additional $10 for flea dipping.
+          </p>
+          <p class="unique-desktop grooming-subsection second-subsection">
+            Hair Cuts
+          </p>
+          <div class="unique-desktop item">
+            <p class="left">Sanitary Cut</p>
+            <p class="price">Starts at $35</p>
+            <span class="sanitary-description">
+              ~Includes bath, ear cleaning, nail trim, light scissoring of feet,
+              rear & belly dog grooming.
+            </span>
+          </div>
+
+          <div class="item">
+            <p class="left">Summer Cut</p>
+            <p>Starts at $50</p>
+          </div>
+          <div class="item">
+            <p class="left">Breed Specific Cut</p>
+            <p>Starts at $55</p>
+          </div>
+        </div>
+        <p class="addendum addendum-desktop">
+          Grooms must be picked up after service is rendered. Dogs left for over
+          1 hour after completion of service with be charged a days boarding.
+        </p>
+      </div>
+      <p class="service">Daycare</p>
+      <div class="servicesContainer">
+        <div class="item">
+          <p class="left">Half Day</p>
+          <p>$20</p>
+        </div>
+        <div class="item">
+          <p class="left">Full Day</p>
+          <p>$30</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © 2020 Floyd’s Good Dog Kennels - All Rights Reserved.</p>
+    </footer>
+    <script src="/js/pricing.js"></script>
+  </body>
+</html>

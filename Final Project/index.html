@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
+    <title>Floyd's Good Dog Kennels</title>
+  </head>
+  <body>
+    <header>
+      <h1>Floyd's Good Dog Kennels</h1>
+      <div class="menu-toggle" id="menuToggle">
+        <img
+          class="hamburger"
+          id="mobile-nav-open"
+          src="/assets/misc/hamburger-icon.PNG"
+        />
+      </div>
+      <aside class="mobile-nav-container" id="mobile-nav-container">
+        <ul class="mobile-nav-items" id="mobile-nav-items">
+          <li><a href="/pages/about.html">About Us</a></li>
+          <li><a href="/pages/hours.html">Hours of Operation</a></li>
+          <li><a href="/pages/pricing.html">Pricing</a></li>
+          <li><a href="/pages/contact.html">Contact Us</a></li>
+          <span class="close-mobile-nav">X</span>
+        </ul>
+      </aside>
+    </header>
+
+    <!-- flickity carousel -->
+    <div class="main-carousel">
+      <div class="carousel-cell">
+        <img src="/assets/carousel/floyd-the-dog.PNG" />
+      </div>
+      <div class="carousel-cell">
+        <img src="/assets/carousel/playing-siblings.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img src="/assets/carousel/bosco-runner.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img src="/assets/carousel/chihuahua-focused.jpg" />
+      </div>
+      <div class="carousel-cell">
+        <img src="/assets/carousel/coco-and-rocky.jpg" />
+      </div>
+    </div>
+    <!-- end flickity carousel -->
+
+    <p class="slogan">It's where the good dogs go!</p>
+
+    <div class="bigNavContainer">
+      <ul class="tab-and-desk-nav-items" id="bigNavItems">
+        <li><a href="/pages/about.html">About Us</a></li>
+        <li><a href="/pages/hours.html">Hours of Operation</a></li>
+        <li><a href="/pages/pricing.html">Pricing</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <main>
+      <section class="welcome">
+        <h2>Welcome to Floyd's Good Dog</h2>
+        <div class="services-container">
+          <p class="services">Our Services Include</p>
+          <ul class="services-list">
+            <li>Grooming</li>
+            <li>~</li>
+            <li>Boarding</li>
+            <li>~</li>
+            <li>Daycare</li>
+          </ul>
+        </div>
+      </section>
+      <section class="unique-container">
+        <p class="section-name">What Makes Us Unique?</p>
+        <!-- accordion for mobile and tablet -->
+        <div class="accordion">
+          <div class="accordion-panel">
+            <p class="accordion-header">An Agricultural Setting</p>
+            <div class="accordion-body">
+              Located on 5 beautiful acres in Grovetown behind our home, your
+              pets can relax in nature.
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <p class="accordion-header">VIPs only</p>
+            <div class="accordion-body">
+              We board only a minimal number of pets at a time. So not only do
+              your pets have their own indoor/outdoor space they have more
+              undivided attention.
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <p class="accordion-header">The "Good Dog" Policy</p>
+            <div class="accordion-body">
+              All outdoor runs are separated; so no fence fighting. For safety,
+              all play time is monitored and no pet is ever left alone
+              unattended.
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <p class="accordion-header">Environment</p>
+            <div class="accordion-body">
+              Your pet will stay in a comfortable, climate controlled room with
+              full-time access to their own personal outdoor space.
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <p class="accordion-header">Competitive Pricing</p>
+            <div class="accordion-body">
+              We charge by the night rather than the day, saving you money.
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <p class="accordion-header">Photo Updates</p>
+            <div class="accordion-body">
+              If you're curious about how your pet is doing without you we even
+              take the time to send a daily picture or two of your pets
+              activities.
+            </div>
+          </div>
+        </div>
+        <!-- unique section for desktop -->
+        <div class="unique-desktop">
+          <div class="unique-image">
+            <img
+              class="inside-unique"
+              src="/assets/unique-images/dogs-in-a-wheelbarrow.jpg"
+            />
+            <p class="unique-header">An Agricultural Setting</p>
+            <span class="unique-body">
+              Located on 5 beautiful acres in Grovetown behind our home, your
+              pets can relax in nature.
+            </span>
+          </div>
+          <div class="unique-image">
+            <img
+              class="inside-unique"
+              src="/assets/unique-images/close-up-dog.jpg"
+            />
+            <p class="unique-header">VIPs only</p>
+            <span class="unique-body"
+              >We board only a minimal number of pets at a time. So not only do
+              your pets have their own indoor/outdoor space they have more
+              undivided attention.
+            </span>
+          </div>
+          <div class="unique-image">
+            <img
+              class="inside-unique"
+              src="/assets/unique-images/smiley-black-lab.jpg"
+            />
+            <p class="unique-header">The "Good Dog" Policy</p>
+            <span class="unique-body"
+              >All outdoor runs are separated; so no fence fighting. For safety,
+              all play time is monitored and no pet is ever left alone
+              unattended.
+            </span>
+          </div>
+          <div class="unique-image">
+            <img
+              class="inside-unique"
+              src="/assets/unique-images/gsd-mastiff-playing.jpg"
+            />
+            <p class="unique-header">Environment</p>
+            <span class="unique-body"
+              >Your pet will stay in a comfortable, climate controlled room with
+              full-time access to their own personal outdoor space.
+            </span>
+          </div>
+          <div class="unique-image">
+            <img
+              class="inside-unique"
+              src="/assets/unique-images/kennels-at-dusk.jpg"
+            />
+            <p class="unique-header">Competitive Pricing</p>
+            <span class="unique-body"
+              >We charge by the night rather than the day, saving you money.
+            </span>
+          </div>
+          <div class="unique-image">
+            <img
+              class="inside-unique"
+              src="/assets/unique-images/boxer-with-rope.jpg"
+            />
+            <p class="unique-header">Photo Updates</p>
+            <span class="unique-body"
+              >If you're curious about how your pet is doing without you we even
+              take the time to send a daily picture or two of your pets
+              activities.
+            </span>
+          </div>
+        </div>
+      </section>
+      <p class="section-name">New To Our Home?</p>
+
+      <section class="new-client-container">
+        <p>
+          Floyd's Good Dog Kennels is located at our
+          <span class="further" id="privacy">home </span>
+          <span class="furtherText">
+            To view our home your pet will need to have a reservation with us.
+            This is for the safety of us and our clients.
+          </span>
+          on private property. On your first trip please bring with you your
+          pet's up-to-date vaccination records.
+        </p>
+        <div class="furtherText">
+          To view our home your pet will need to have a reservation with us.
+          This is for the safety of us and our clients.
+        </div>
+        <p>This includes :</p>
+        <ul class="vaccines">
+          <li>DHLP</li>
+          <li>Rabies</li>
+          <li>Kennel Cough</li>
+          <li>FVRCP (for cats)</li>
+        </ul>
+        <p>
+          You will also be required to fill out a New Client Information Card
+          and a Liability Waiver when you arrive.
+        </p>
+        <p>We hope to see you soon!</p>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2020 Floyd’s Good Dog Kennels - All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

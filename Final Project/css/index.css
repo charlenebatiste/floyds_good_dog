@@ -1,0 +1,547 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Baloo Chettan 2", cursive;
+  margin: auto;
+}
+
+main {
+  background-color: #eeeeee;
+  border: solid 2px #cccccc;
+  border-radius: 0.5em;
+  width: 96%;
+}
+
+li {
+  list-style-type: none;
+}
+
+span {
+  display: block;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Header Section */
+
+h1 {
+  font-size: 1.5em;
+}
+
+.hamburger {
+  width: 100%;
+}
+
+.menu-toggle {
+  margin-top: 1em;
+  width: 10vw;
+  position: absolute;
+  top: -1vw;
+  left: 88vw;
+}
+
+.mobile-nav-container {
+  visibility: hidden;
+  background-color: #dddddd;
+  border-radius: 0.5em;
+  min-width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.mobile-nav-items {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  top: 10em;
+  padding: 0;
+}
+
+.mobile-nav-items li {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.mobile-nav-items a {
+  color: rebeccapurple;
+}
+
+.close-mobile-nav {
+  position: relative;
+  font-size: 2em;
+  top: -12em;
+  border: 0.1em solid lightgray;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  width: 15%;
+  float: right;
+  background-color: #eeeeee;
+  color: rgb(95, 92, 92);
+}
+
+.main-carousel {
+  width: 80%;
+}
+
+.carousel-cell,
+.carousel-cell img {
+  width: 100%;
+}
+
+.carousel-cell img {
+  border-radius: 0.8em;
+}
+
+.slogan {
+  text-align: center;
+  margin: 0.1em 0em 1em;
+  font-style: italic;
+}
+
+.bigNavContainer {
+  display: none;
+}
+
+/* Welcome Section */
+
+h2 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-block-end: 0.3em;
+}
+
+.services {
+  text-align: center;
+  border-top: 0.1em solid rebeccapurple;
+  border-bottom: 0.1em solid rebeccapurple;
+  width: 90%;
+  margin: auto;
+  font-size: 1.2em;
+  background-color: whitesmoke;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  width: 80%;
+  margin: 0.3em auto;
+}
+
+.services-list li {
+  font-size: 1.1em;
+}
+
+/* What Makes Us Unique Section */
+
+.unique-desktop {
+  display: none;
+}
+
+.accordion-panel {
+  margin: 1em 2em;
+  padding: 0.5em 1em;
+  border: solid 2px #cccccc;
+  border-radius: 0.3em;
+  color: #2b78e4;
+  background-color: #dddddd;
+  font-size: 1.1em;
+}
+
+.accordion-body {
+  padding-top: 0.3em;
+  font-size: 0.9em;
+  color: #4899c7;
+}
+
+.accordion-panel > .accordion-body {
+  display: none;
+}
+
+.accordion-panel.accordion-expanded > .accordion-body {
+  display: block;
+}
+
+.section-name {
+  margin: 0.5em 0em 0em 0.5em;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+/* New To Our Home Section */
+
+.new-client-container p {
+  margin: 0.5em 1.5em;
+  font-size: 1.1em;
+}
+
+.new-client-container a {
+  color: #2b78e4;
+}
+
+.further {
+  display: inline;
+  color: #2b78e4;
+}
+
+.furtherText {
+  display: none;
+}
+
+.forOurSafety {
+  display: block;
+  position: absolute;
+  width: 75%;
+  background-color: rgb(224, 168, 238);
+  border: 0.1em solid rebeccapurple;
+  border-radius: 0.5em;
+  margin: 0 0.5em;
+  padding: 0.8em 0;
+  font-style: italic;
+  padding: 0.5em;
+}
+
+.vaccines {
+  margin: 0em 4em;
+}
+
+.vaccines li {
+  list-style-type: disc;
+}
+
+/* Footer */
+
+footer {
+  color: #085394;
+  background-color: #9fc5f8;
+  border: solid 3px #999999;
+  border-radius: 0.5em;
+  text-align: center;
+  width: 96%;
+}
+
+.mobile_menu {
+  visibility: hidden;
+}
+
+/* Tablet Styling */
+
+@media only screen and (min-device-width: 740px) and (max-device-width: 1220px) {
+  h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+  }
+
+  .slogan {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .bigNavContainer {
+    display: block;
+    border-top: 0.1em solid rebeccapurple;
+    border-bottom: 0.1em solid rebeccapurple;
+    width: 75%;
+  }
+
+  .tab-and-desk-nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 0.5em 0;
+  }
+
+  .tab-and-desk-nav-items a {
+    text-decoration: none;
+    font-size: 1.4em;
+  }
+
+  main {
+    margin-top: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  .services {
+    border-top: none;
+    border-bottom: none;
+    background-color: #eeeeee;
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+
+  .services-list {
+    width: 65%;
+    font-size: 1.3em;
+  }
+
+  .section-name {
+    font-size: 1.9em;
+    text-decoration: underline;
+  }
+
+  .unique-desktop {
+    display: none;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+
+  .accordion-header {
+    font-size: 1.4em;
+  }
+
+  .accordion-body {
+    font-size: 1.3em;
+  }
+
+  .new-client-container {
+    font-size: 1.5em;
+  }
+
+  .vaccines li {
+    font-size: 1.1em;
+  }
+
+  .forOurSafety {
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin: 0 1em;
+    padding: 0.8em 0;
+    right: -0.1em;
+    font-style: italic;
+    padding: 0.5em;
+  }
+
+  footer {
+    font-size: 1.5em;
+  }
+}
+
+/* Styling for Desktops */
+
+@media only screen and (min-device-width: 1220px) {
+  body {
+    background: #9fc5f8;
+    background-image: url(/assets/misc/pawprints-transparent.png),
+      url(/assets/misc/pawprints-transparent.png);
+    background-position: 150% 0, -10% 0;
+    /* this positions the first image and then the second image */
+    background-blend-mode: soft-light;
+    background-size: cover;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3.3em;
+  }
+
+  .main-carousel {
+    width: 75%;
+  }
+
+  .slogan {
+    font-size: 2.7em;
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .bigNavContainer {
+    display: block;
+    border-top: 0.1em solid #1b5588;
+    border-bottom: 0.1em solid #1b5588;
+    width: 85%;
+    margin-bottom: 1em;
+  }
+
+  .tab-and-desk-nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 0.2em 0;
+    padding: 0;
+  }
+
+  .tab-and-desk-nav-items a {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #1b5588;
+  }
+
+  .tab-and-desk-nav-items a:hover {
+    font-weight: bolder;
+    color: rgb(173, 22, 148);
+  }
+
+  main {
+    border: solid 0.1em #4a6277;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 0.5em 0 0;
+  }
+
+  .services-container {
+    width: 50%;
+    margin: auto;
+  }
+
+  .services {
+    width: 75%;
+    font-size: 1.8em;
+    border: none;
+    background-color: #eeeeee;
+    text-decoration: underline;
+    padding: 0.5em 0;
+  }
+
+  .services-list {
+    margin: 0 auto;
+  }
+
+  .services-list li {
+    font-size: 1.6em;
+  }
+
+  .section-name {
+    font-size: 2.2em;
+    padding: 0.5em;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  /* unique section for desktop styling */
+
+  .unique-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+  }
+
+  .unique-image {
+    width: 30%;
+    position: relative;
+    margin: 1em;
+    padding: 1em 0px;
+    border: 0.2em solid rgb(74, 98, 119);
+    border-radius: 1em;
+    background-color: rgb(195, 202, 218);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem 1.2rem;
+  }
+
+  .unique-header {
+    text-align: center;
+    color: rgb(12, 50, 102);
+    font-size: 1.8em;
+    padding: 1.1em 0px;
+  }
+
+  .unique-image:hover .unique-header {
+    color: rgb(173, 22, 148);
+    font-weight: bolder;
+  }
+
+  .inside-unique {
+    width: 92%;
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+  }
+
+  .unique-body {
+    position: absolute;
+    font-size: 1.5em;
+    line-height: 1.1;
+    top: 0.5em;
+    bottom: 4em;
+    padding: 1.5em 1em;
+    color: darkblue;
+    background-color: rgba(195, 202, 218, 0.7);
+    border-radius: 0.3em;
+    opacity: 0;
+    transform: translate3d(0, 2em, 0);
+    transition: opacity 0.35s, transform 0.35s;
+  }
+
+  .unique-image:hover .unique-body {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* unique section for desktop styling end */
+
+  .new-client-container {
+    width: 85%;
+  }
+
+  .new-client-container p,
+  .vaccines {
+    font-size: 1.6em;
+  }
+
+  .further {
+    color: #1b5588;
+  }
+
+  .further:hover {
+    font-weight: bolder;
+    color: rgb(173, 22, 148);
+    cursor: pointer;
+  }
+
+  .furtherText {
+    font-size: 1em;
+    animation: fadeIn ease 0.3s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .forOurSafety {
+    width: 50%;
+    background-color: rgb(224, 168, 238);
+    border: 0.1em solid rebeccapurple;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    font-style: italic;
+    padding: 0.5em;
+    right: 0.8em;
+  }
+
+  footer {
+    background-color: transparent;
+    font-size: 1.6em;
+    border: none;
+  }
+}
