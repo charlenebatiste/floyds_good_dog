@@ -1,0 +1,480 @@
+* {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: "Baloo Chettan 2", cursive;
+	margin: auto;
+}
+
+main {
+	background-color: #eeeeee9f;
+	border: solid 2px #cccccc;
+	border-radius: 0.5em;
+	width: 96%;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Header Section */
+
+h1 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.bigNavContainer {
+	display: none;
+}
+
+.hamburger {
+	width: 100%;
+}
+
+.menu-toggle {
+	margin-top: 1em;
+	width: 10vw;
+	position: absolute;
+	top: -1vw;
+	left: 88vw;
+}
+
+.mobile-nav-container {
+	visibility: hidden;
+	background-color: #dddddd;
+	border-radius: 0.5em;
+	min-width: 100%;
+	min-height: 100vh;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+.mobile-nav-items {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	top: 10em;
+	padding: 0;
+}
+
+.mobile-nav-items li {
+	font-size: 2em;
+	margin: 0.5em;
+}
+
+.mobile-nav-items a {
+	color: rebeccapurple;
+}
+
+.close-mobile-nav {
+	position: relative;
+	font-size: 2em;
+	top: -12em;
+	border: 0.1em solid lightgray;
+	border-radius: 0.5em;
+	margin: 0.5em;
+	width: 15%;
+	float: right;
+	background-color: #eeeeee9f;
+	color: rgb(95, 92, 92);
+}
+
+.mobile_menu {
+	visibility: hidden;
+}
+
+/* Main */
+
+h2 {
+	font-size: 1.4em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-block-end: 0.3em;
+}
+
+.service {
+	margin: 0.5em 0em 0em 0.5em;
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+.grooming-subsection {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+ul {
+	padding: 0;
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1em;
+	padding: 0.5em;
+	border: solid 2px #cccccc;
+	border-radius: 0.3em;
+	background-color: #dddddd;
+	font-size: 1.1em;
+}
+
+.item p {
+	margin-right: 0.6em;
+}
+
+.left {
+	margin-left: 0;
+}
+
+.accordion-panel {
+	margin: 1em;
+	padding: 0.5em 1em;
+	border: solid 2px #cccccc;
+	border-radius: 0.3em;
+	color: #2b78e4;
+	background-color: #dddddd;
+	font-size: 1.1em;
+}
+
+.accordion-body {
+	padding-top: 0.3em;
+	font-size: 0.9em;
+	color: #4899c7;
+}
+
+.accordion-panel > .accordion-body {
+	display: none;
+}
+
+.accordion-panel.accordion-expanded
+	> .accordion-body {
+	display: block;
+}
+
+.accordion-body {
+	font-size: 1em;
+}
+
+.accordion-flex {
+	margin: 0;
+}
+
+.price {
+	text-align: right;
+}
+
+.left {
+	margin: 0;
+}
+
+.addendum {
+	padding: 0 1em;
+	font-style: italic;
+}
+
+.unique-desktop {
+	display: none;
+}
+
+/* Footer */
+
+footer {
+	color: #085394;
+	background-color: #9fc5f8;
+	border: solid 3px #999999;
+	border-radius: 0.5em;
+	text-align: center;
+	width: 96%;
+}
+
+/* Tablet Styling */
+
+@media only screen and (min-device-width: 740px) and (max-device-width: 1200px) {
+	h1 {
+		font-size: 3em;
+		margin: 0.2em 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.bigNavContainer {
+		display: block;
+		border-top: 0.1em solid rebeccapurple;
+		border-bottom: 0.1em solid rebeccapurple;
+		width: 75%;
+	}
+
+	.tab-and-desk-nav-items {
+		display: flex;
+		flex-wrap: wrap;
+		text-decoration: none;
+		margin: 0.5em 0;
+	}
+
+	.tab-and-desk-nav-items a {
+		text-decoration: none;
+		font-size: 1.4em;
+	}
+
+	.unique-desktop {
+		display: none;
+	}
+
+	main {
+		margin-top: 0.5em;
+		padding: 1em;
+	}
+
+	h2,
+	h3 {
+		font-size: 1.7em;
+	}
+
+	.servicesContainer {
+		width: 90%;
+	}
+
+	.service {
+		font-size: 1.9em;
+		text-decoration: underline;
+		margin-left: 2em;
+	}
+
+	.grooming {
+		margin-left: 1em;
+	}
+
+	.grooming-subsection {
+		font-size: 1.7em;
+	}
+
+	.second-subsection {
+		margin-top: 1em;
+	}
+
+	.accordion-header,
+	.accordion-body {
+		font-size: 1.4em;
+		padding: 0 0.5em;
+	}
+	.item p {
+		font-size: 1.4em;
+	}
+
+	.accordion-flex {
+		margin: 0;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.accordion-flex p {
+		margin: 0;
+	}
+
+	.description {
+		width: 75%;
+	}
+
+	.price {
+		width: 25%;
+		text-align: right;
+	}
+
+	.left {
+		margin-left: 0.8em;
+	}
+
+	.addendum {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.servicesContainer li,
+	footer {
+		font-size: 1.5em;
+	}
+}
+
+/* Styling for Desktops */
+
+@media only screen and (min-device-width: 1220px) {
+	body {
+		background: #9fc5f8;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 3.3em;
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.bigNavContainer {
+		display: block;
+		border-top: 0.1em solid #1b5588;
+		border-bottom: 0.1em solid #1b5588;
+		width: 85%;
+		margin-bottom: 1em;
+	}
+
+	.tab-and-desk-nav-items {
+		display: flex;
+		flex-wrap: wrap;
+		text-decoration: none;
+		margin: 0.2em 0;
+		padding: 0;
+	}
+
+	.tab-and-desk-nav-items a {
+		text-decoration: none;
+		font-size: 2.5em;
+		color: #1b5588;
+	}
+
+	.tab-and-desk-nav-items li {
+		list-style-type: none;
+		padding: 0;
+		text-indent: 0;
+	}
+
+	.tab-and-desk-nav-items a:hover {
+		font-weight: bolder;
+		color: rgb(173, 22, 148);
+	}
+
+	main {
+		border: solid 0.1em #4a6277;
+		padding-bottom: 1em;
+	}
+
+	.accordion {
+		display: none;
+	}
+
+	/* unique section for desktop styling */
+
+	.unique-desktop {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		width: 80%;
+		margin: auto;
+	}
+
+	.unique-image {
+		width: 30%;
+		position: relative;
+		margin: 1em;
+		padding: 1em 0px;
+		border: 0.1em solid rgb(74, 98, 119);
+		border-radius: 1em;
+		background-color: rgb(195, 202, 218);
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem
+			1.2rem;
+	}
+
+	.unique-header {
+		text-align: center;
+		color: rgb(12, 50, 102);
+		font-size: 1.8em;
+		padding: 1.1em 0px;
+	}
+
+	.unique-image:hover .unique-header {
+		color: rgb(173, 22, 148);
+		font-weight: bolder;
+	}
+
+	.inside-unique {
+		width: 92%;
+		display: block;
+		margin: auto;
+		border-radius: 1em;
+	}
+
+	.unique-body {
+		position: absolute;
+		font-size: 1.2em;
+		bottom: 6em;
+		padding: 1em 1.5em;
+		color: darkblue;
+		background-color: rgba(
+			195,
+			202,
+			218,
+			0.7
+		);
+		opacity: 0;
+		transform: translate3d(0, 2em, 0);
+		transition: opacity 0.35s, transform 0.35s;
+		width: 100%;
+	}
+
+	.unique-image:hover .unique-body {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+	/* unique section for desktop styling end */
+
+	.item {
+		background-color: rgb(195, 202, 218);
+		border: 0.05em solid rgb(74, 98, 119);
+		width: 65%;
+		padding: 1em;
+		margin: 1em auto;
+	}
+
+	h2 {
+		font-size: 2em;
+		margin: 0.5em 0 0;
+	}
+
+	.service {
+		font-size: 2.2em;
+		padding: 0.5em;
+		margin-left: 2em;
+	}
+
+	.grooming-subsection {
+		font-size: 1.8em;
+	}
+
+	.item p {
+		font-size: 1.5em;
+	}
+
+	.sanitary-description {
+		font-size: 1.2em;
+		padding: 0 1em 0 2em;
+		font-style: italic;
+	}
+
+	.addendum {
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	.addendum-desktop {
+		color: rgb(173, 22, 148);
+		font-size: 1.4em;
+		margin: 1.5em auto;
+	}
+
+	footer {
+		background-color: transparent;
+		font-size: 1.6em;
+		border: none;
+	}
+}
