@@ -8,7 +8,7 @@
 
 ## General info
 
-This project is a custom designed and coded professional website for Floyd's Good Dog Daycare and Borading in Grovetown, GA. Built with mobile-first design in midn, the goal of this project was to providing a more professional website for a small business with custom styling.
+This project is a custom designed and coded professional website for Floyd's Good Dog Daycare and Boarding in Grovetown, GA. Built with mobile-first design in midn, the goal of this project was to providing a more professional website for a small business with custom styling.
 
 ## Technologies
 
