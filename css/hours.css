@@ -6,7 +6,7 @@
 }
 
 main {
-	background-color: #eeeeee9f;
+	background-color: #9fc5f89f;
 	border: solid 2px #cccccc;
 	border-radius: 0.5em;
 	width: 96%;
@@ -251,6 +251,12 @@ footer {
 
 	main {
 		border: solid 0.1em #4a6277;
+		background-color: rgba(
+			255,
+			255,
+			255,
+			0.803
+		);
 	}
 
 	h2 {

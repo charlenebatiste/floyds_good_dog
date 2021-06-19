@@ -6,7 +6,7 @@
 }
 
 main {
-	background-color: #eeeeee9f;
+	background-color: #9fc5f89f;
 	border: solid 2px #cccccc;
 	border-radius: 0.5em;
 	width: 96%;
@@ -115,9 +115,9 @@ ul {
 	flex-wrap: wrap;
 	margin: 1em;
 	padding: 0.5em;
-	border: solid 2px #cccccc;
+	border: solid 2px #7aa5e3;
 	border-radius: 0.3em;
-	background-color: #dddddd;
+	background-color: rgb(255, 255, 255);
 	font-size: 1.1em;
 }
 
@@ -132,10 +132,10 @@ ul {
 .accordion-panel {
 	margin: 1em;
 	padding: 0.5em 1em;
-	border: solid 2px #cccccc;
+	border: solid 2px #7aa5e3;
 	border-radius: 0.3em;
 	color: #2b78e4;
-	background-color: #dddddd;
+	background-color: rgb(255, 255, 255);
 	font-size: 1.1em;
 }
 
@@ -356,6 +356,12 @@ footer {
 	main {
 		border: solid 0.1em #4a6277;
 		padding-bottom: 1em;
+		background-color: rgba(
+			255,
+			255,
+			255,
+			0.803
+		);
 	}
 
 	.accordion {
@@ -379,7 +385,7 @@ footer {
 		padding: 1em 0px;
 		border: 0.1em solid rgb(74, 98, 119);
 		border-radius: 1em;
-		background-color: rgb(195, 202, 218);
+		background-color: white;
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem
 			1.2rem;
 	}
@@ -429,7 +435,7 @@ footer {
 	/* unique section for desktop styling end */
 
 	.item {
-		background-color: rgb(195, 202, 218);
+		background-color: white;
 		border: 0.05em solid rgb(74, 98, 119);
 		width: 65%;
 		padding: 1em;
