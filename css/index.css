@@ -1,101 +1,18 @@
-/* Global */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 100%;
-  font-family: "Baloo Chettan 2", cursive;
-  margin: auto;
-}
-
-main {
-  background-color: #9fc5f89f;
-  border: solid 2px #cccccc;
-  border-radius: 0.5em;
-  width: 96%;
-}
-
-li {
-  list-style-type: none;
-}
-
-span {
-  display: block;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
+@import url(global.css);
 /* Header Section */
 h1 {
   font-size: 1.5em;
-}
-
-.hamburger {
-  width: 100%;
-}
-
-.menu-toggle {
-  margin-top: 1em;
-  width: 10vw;
-  position: absolute;
-  top: -1vw;
-  left: 88vw;
-}
-
-.mobile-nav-container {
-  visibility: hidden;
-  background-color: #dddddd;
-  border-radius: 0.5em;
-  min-width: 100%;
-  min-height: 100vh;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-}
-
-.mobile-nav-items {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  top: 10em;
-  padding: 0;
-}
-
-.mobile-nav-items li {
-  font-size: 2em;
-  margin: 0.5em;
-}
-
-.mobile-nav-items a {
-  color: rebeccapurple;
-}
-
-.close-mobile-nav {
-  position: relative;
-  font-size: 2em;
-  top: -12em;
-  border: 0.1em solid lightgray;
-  border-radius: 0.5em;
-  margin: 0.5em;
-  width: 15%;
-  float: right;
-  background-color: #eeeeee;
-  color: #5f5c5c;
 }
 
 .main-carousel {
   width: 80%;
 }
 
-.carousel-cell {
+.main-carousel .carousel-cell {
   width: 100%;
 }
 
-.carousel-cell img {
+.main-carousel .carousel-cell img {
   width: 100%;
   border-radius: 0.8em;
 }
@@ -120,8 +37,8 @@ h2 {
 
 .services {
   text-align: center;
-  border-top: 0.1em solid rebeccapurple;
-  border-bottom: 0.1em solid rebeccapurple;
+  border-top: 1px solid rebeccapurple;
+  border-bottom: 1px solid rebeccapurple;
   width: 90%;
   margin: auto;
   font-size: 1.2em;
@@ -203,7 +120,7 @@ h2 {
   position: absolute;
   width: 75%;
   background-color: #e0a8ee;
-  border: 0.1em solid rebeccapurple;
+  border: 1px solid rebeccapurple;
   border-radius: 0.5em;
   margin: 0 0.5em;
   padding: 0.8em 0;
@@ -248,8 +165,8 @@ footer {
   }
   .bigNavContainer {
     display: block;
-    border-top: 0.1em solid rebeccapurple;
-    border-bottom: 0.1em solid rebeccapurple;
+    border-top: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
     width: 75%;
   }
   .tab-and-desk-nav-items {
@@ -353,8 +270,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     text-decoration: none;
     margin: 0.2em 0;
     padding: 0;
@@ -413,7 +330,7 @@ footer {
     width: 80%;
     margin: auto;
   }
-  .unique-image {
+  .unique-desktop .unique-image {
     width: 30%;
     position: relative;
     margin: 1em;
@@ -424,23 +341,23 @@ footer {
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem 1.2rem;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem 1.2rem;
   }
-  .unique-header {
+  .unique-desktop .unique-header {
     text-align: center;
     color: #0c3266;
     font-size: 1.8em;
     padding: 1.1em 0px;
   }
-  .unique-image:hover .unique-header {
+  .unique-desktop .unique-image:hover .unique-header {
     color: #ad1694;
     font-weight: bolder;
   }
-  .inside-unique {
+  .unique-desktop .inside-unique {
     width: 92%;
     display: block;
     margin: auto;
     border-radius: 1em;
   }
-  .unique-body {
+  .unique-desktop .unique-body {
     position: absolute;
     font-size: 1.5em;
     line-height: 1.1;
@@ -458,7 +375,7 @@ footer {
     transition: opacity 0.35s, transform 0.35s;
     transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   }
-  .unique-image:hover .unique-body {
+  .unique-desktop .unique-image:hover .unique-body {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
@@ -503,7 +420,7 @@ footer {
   .forOurSafety {
     width: 50%;
     background-color: #e0a8ee;
-    border: 0.1em solid rebeccapurple;
+    border: 1px solid rebeccapurple;
     border-radius: 0.5em;
     margin-right: 1em;
     font-style: italic;

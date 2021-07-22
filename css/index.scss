@@ -1,31 +1,7 @@
-/* Global */
+// Variables
+$purple-border: 1px solid rebeccapurple;
 
-* {
-	box-sizing: border-box;
-	font-size: 100%;
-	font-family: "Baloo Chettan 2", cursive;
-	margin: auto;
-}
-
-main {
-	background-color: #9fc5f89f;
-	border: solid 2px #cccccc;
-	border-radius: 0.5em;
-	width: 96%;
-}
-
-li {
-	list-style-type: none;
-}
-
-span {
-	display: block;
-}
-
-h1,
-h2 {
-	text-align: center;
-}
+@import url(global.css);
 
 /* Header Section */
 
@@ -33,71 +9,16 @@ h1 {
 	font-size: 1.5em;
 }
 
-.hamburger {
-	width: 100%;
-}
-
-.menu-toggle {
-	margin-top: 1em;
-	width: 10vw;
-	position: absolute;
-	top: -1vw;
-	left: 88vw;
-}
-
-.mobile-nav-container {
-	visibility: hidden;
-	background-color: #dddddd;
-	border-radius: 0.5em;
-	min-width: 100%;
-	min-height: 100vh;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-}
-
-.mobile-nav-items {
-	position: relative;
-	top: 25%;
-	width: 100%;
-	text-align: center;
-	top: 10em;
-	padding: 0;
-
-	li {
-		font-size: 2em;
-		margin: 0.5em;
-	}
-
-	a {
-		color: rebeccapurple;
-	}
-}
-
-.close-mobile-nav {
-	position: relative;
-	font-size: 2em;
-	top: -12em;
-	border: 0.1em solid lightgray;
-	border-radius: 0.5em;
-	margin: 0.5em;
-	width: 15%;
-	float: right;
-	background-color: #eeeeee;
-	color: rgb(95, 92, 92);
-}
-
 .main-carousel {
 	width: 80%;
-}
 
-.carousel-cell {
-	width: 100%;
-
-	img {
+	.carousel-cell {
 		width: 100%;
-		border-radius: 0.8em;
+
+		img {
+			width: 100%;
+			border-radius: 0.8em;
+		}
 	}
 }
 
@@ -121,8 +42,10 @@ h2 {
 
 .services {
 	text-align: center;
-	border-top: 0.1em solid rebeccapurple;
-	border-bottom: 0.1em solid rebeccapurple;
+	border: {
+		top: $purple-border;
+		bottom: $purple-border;
+	}
 	width: 90%;
 	margin: auto;
 	font-size: 1.2em;
@@ -173,8 +96,10 @@ h2 {
 
 .section-name {
 	margin: 0.5em 0em 0em 0.5em;
-	font-size: 1.3em;
-	font-style: italic;
+	font: {
+		size: 1.3em;
+		style: italic;
+	}
 }
 
 /* New To Our Home Section */
@@ -204,7 +129,7 @@ h2 {
 	position: absolute;
 	width: 75%;
 	background-color: rgb(224, 168, 238);
-	border: 0.1em solid rebeccapurple;
+	border: $purple-border;
 	border-radius: 0.5em;
 	margin: 0 0.5em;
 	padding: 0.8em 0;
@@ -254,8 +179,10 @@ footer {
 
 	.bigNavContainer {
 		display: block;
-		border-top: 0.1em solid rebeccapurple;
-		border-bottom: 0.1em solid rebeccapurple;
+		border: {
+			top: $purple-border;
+			bottom: $purple-border;
+		}
 		width: 75%;
 	}
 
@@ -280,8 +207,10 @@ footer {
 	}
 
 	.services {
-		border-top: none;
-		border-bottom: none;
+		border: {
+			top: none;
+			bottom: none;
+		}
 		text-decoration: underline;
 		font-size: 1.5em;
 	}
@@ -369,15 +298,19 @@ footer {
 
 	.bigNavContainer {
 		display: block;
-		border-top: 0.1em solid #1b5588;
-		border-bottom: 0.1em solid #1b5588;
+		border: {
+			top: 0.1em solid #1b5588;
+			bottom: 0.1em solid #1b5588;
+		}
 		width: 85%;
 		margin-bottom: 1em;
 	}
 
 	.tab-and-desk-nav-items {
 		display: flex;
-		flex-wrap: wrap;
+		flex: {
+			wrap: nowrap;
+		}
 		text-decoration: none;
 		margin: 0.2em 0;
 		padding: 0;
@@ -447,62 +380,63 @@ footer {
 		justify-content: space-evenly;
 		width: 80%;
 		margin: auto;
-	}
 
-	.unique-image {
-		width: 30%;
-		position: relative;
-		margin: 1em;
-		padding: 1em 0px;
-		border: 0.2em solid rgb(74, 98, 119);
-		border-radius: 1em;
-		background-color: white;
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 0.2rem
-			1.2rem;
-	}
+		.unique-image {
+			width: 30%;
+			position: relative;
+			margin: 1em;
+			padding: 1em 0px;
+			border: 0.2em solid rgb(74, 98, 119);
+			border-radius: 1em;
+			background-color: white;
+			box-shadow: rgba(0, 0, 0, 0.2) 0px
+				0.2rem 1.2rem;
+		}
 
-	.unique-header {
-		text-align: center;
-		color: rgb(12, 50, 102);
-		font-size: 1.8em;
-		padding: 1.1em 0px;
-	}
+		.unique-header {
+			text-align: center;
+			color: rgb(12, 50, 102);
+			font-size: 1.8em;
+			padding: 1.1em 0px;
+		}
 
-	.unique-image:hover .unique-header {
-		color: rgb(173, 22, 148);
-		font-weight: bolder;
-	}
+		.unique-image:hover .unique-header {
+			color: rgb(173, 22, 148);
+			font-weight: bolder;
+		}
 
-	.inside-unique {
-		width: 92%;
-		display: block;
-		margin: auto;
-		border-radius: 1em;
-	}
+		.inside-unique {
+			width: 92%;
+			display: block;
+			margin: auto;
+			border-radius: 1em;
+		}
 
-	.unique-body {
-		position: absolute;
-		font-size: 1.5em;
-		line-height: 1.1;
-		top: 0.5em;
-		bottom: 4em;
-		padding: 1.5em 1em;
-		color: darkblue;
-		background-color: rgba(
-			195,
-			202,
-			218,
-			0.7
-		);
-		border-radius: 0.3em;
-		opacity: 0;
-		transform: translate3d(0, 2em, 0);
-		transition: opacity 0.35s, transform 0.35s;
-	}
+		.unique-body {
+			position: absolute;
+			font-size: 1.5em;
+			line-height: 1.1;
+			top: 0.5em;
+			bottom: 4em;
+			padding: 1.5em 1em;
+			color: darkblue;
+			background-color: rgba(
+				195,
+				202,
+				218,
+				0.7
+			);
+			border-radius: 0.3em;
+			opacity: 0;
+			transform: translate3d(0, 2em, 0);
+			transition: opacity 0.35s,
+				transform 0.35s;
+		}
 
-	.unique-image:hover .unique-body {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
+		.unique-image:hover .unique-body {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
 	}
 
 	/* unique section for desktop styling end */
@@ -543,7 +477,7 @@ footer {
 	.forOurSafety {
 		width: 50%;
 		background-color: rgb(224, 168, 238);
-		border: 0.1em solid rebeccapurple;
+		border: $purple-border;
 		border-radius: 0.5em;
 		margin-right: 1em;
 		font-style: italic;

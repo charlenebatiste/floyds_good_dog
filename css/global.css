@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: "Baloo Chettan 2", cursive;
+	margin: auto;
+}
+
+main {
+	background-color: #9fc5f89f;
+	border: solid 2px #cccccc;
+	border-radius: 0.5em;
+	width: 96%;
+}
+
+li {
+	list-style-type: none;
+}
+
+span {
+	display: block;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+.bigNavContainer {
+	display: none;
+}
+
+.hamburger {
+	width: 100%;
+}
+
+.menu-toggle {
+	margin-top: 1em;
+	width: 10vw;
+	position: absolute;
+	top: -1vw;
+	left: 88vw;
+}
+
+.mobile-nav-container {
+	visibility: hidden;
+	background-color: #dddddd;
+	border-radius: 0.5em;
+	min-width: 100%;
+	min-height: 100vh;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+.mobile-nav-items {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	top: 10em;
+	padding: 0;
+}
+
+.mobile-nav-items li {
+	font-size: 2em;
+	margin: 0.5em;
+}
+
+.mobile-nav-items a {
+	color: rebeccapurple;
+}
+
+.close-mobile-nav {
+	position: relative;
+	font-size: 2em;
+	top: -12em;
+	border: 0.1em solid lightgray;
+	border-radius: 0.5em;
+	margin: 0.5em;
+	width: 15%;
+	float: right;
+	background-color: #eeeeee9f;
+	color: rgb(95, 92, 92);
+}
