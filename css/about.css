@@ -20,8 +20,8 @@ h2 {
 .about p {
   margin: 0.5em 1.5em;
   font-size: 1.1em;
-  border-top: 0.1em solid rebeccapurple;
-  border-bottom: 0.1em solid rebeccapurple;
+  border-top: 1px solid rebeccapurple;
+  border-bottom: 1px solid rebeccapurple;
 }
 
 /* Care Section */
@@ -69,7 +69,7 @@ li {
   position: absolute;
   width: 75%;
   background-color: #e0a8ee;
-  border: 0.1em solid rebeccapurple;
+  border: 1px solid rebeccapurple;
   border-radius: 0.5em;
   margin: 0 1em;
   padding: 0.8em 0;
@@ -101,8 +101,8 @@ footer {
   }
   .bigNavContainer {
     display: block;
-    border-top: 0.1em solid rebeccapurple;
-    border-bottom: 0.1em solid rebeccapurple;
+    border-top: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
     width: 75%;
   }
   .tab-and-desk-nav-items {
@@ -229,6 +229,9 @@ footer {
   .perks {
     border: none;
   }
+  .perks p {
+    font-size: 1.6em;
+  }
   .perk-photo {
     display: block;
     padding: 2.5em;
@@ -236,9 +239,6 @@ footer {
   .flex-item {
     width: 48%;
     margin: 0;
-  }
-  .perks p {
-    font-size: 1.6em;
   }
   img {
     width: 100%;

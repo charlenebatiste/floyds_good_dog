@@ -1,3 +1,6 @@
+// Variables
+$purple-border: 1px solid rebeccapurple;
+
 @import url(global.css);
 
 /* Header Section */
@@ -17,13 +20,14 @@ h2 {
 
 .about {
 	text-align: center;
-}
-
-.about p {
-	margin: 0.5em 1.5em;
-	font-size: 1.1em;
-	border-top: 0.1em solid rebeccapurple;
-	border-bottom: 0.1em solid rebeccapurple;
+	p {
+		margin: 0.5em 1.5em;
+		font-size: 1.1em;
+		border: {
+			top: $purple-border;
+			bottom: $purple-border;
+		}
+	}
 }
 
 /* Care Section */
@@ -39,12 +43,11 @@ h3 {
 .perks {
 	margin: 0em 1.5em;
 	border-radius: 0.3em;
-}
-
-.perks p {
-	text-align: center;
-	margin: 0.5em 0.2em;
-	font-size: 1.1em;
+	p {
+		text-align: center;
+		margin: 0.5em 0.2em;
+		font-size: 1.1em;
+	}
 }
 
 .openSuperior {
@@ -61,8 +64,10 @@ ul {
 
 li {
 	list-style-type: none;
-	padding-left: 2em;
-	padding-right: 0.5em;
+	padding: {
+		left: 2em;
+		right: 0.5em;
+	}
 	font-size: 1.1em;
 	text-indent: -1em;
 }
@@ -72,7 +77,7 @@ li {
 	position: absolute;
 	width: 75%;
 	background-color: rgb(224, 168, 238);
-	border: 0.1em solid rebeccapurple;
+	border: $purple-border;
 	border-radius: 0.5em;
 	margin: 0 1em;
 	padding: 0.8em 0;
@@ -108,8 +113,10 @@ footer {
 
 	.bigNavContainer {
 		display: block;
-		border-top: 0.1em solid rebeccapurple;
-		border-bottom: 0.1em solid rebeccapurple;
+		border: {
+			top: $purple-border;
+			bottom: $purple-border;
+		}
 		width: 75%;
 	}
 
@@ -251,6 +258,9 @@ footer {
 
 	.perks {
 		border: none;
+		p {
+			font-size: 1.6em;
+		}
 	}
 
 	.perk-photo {
@@ -261,10 +271,6 @@ footer {
 	.flex-item {
 		width: 48%;
 		margin: 0;
-	}
-
-	.perks p {
-		font-size: 1.6em;
 	}
 
 	img {
