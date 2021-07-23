@@ -1,5 +1,10 @@
 // Variables
 $purple-border: 1px solid rebeccapurple;
+$colors: (
+	background-blue: #9fc5f8,
+	deep-blue: #2b78e4,
+	hover-color: rgb(173, 22, 148),
+);
 
 @import url(global.css);
 
@@ -74,7 +79,7 @@ h2 {
 	padding: 0.5em 1em;
 	border: solid 2px #7aa5e3;
 	border-radius: 0.3em;
-	color: #2b78e4;
+	color: map-get($colors, deep-blue);
 	background-color: rgb(255, 255, 255);
 	font-size: 1.1em;
 }
@@ -111,13 +116,13 @@ h2 {
 	}
 
 	a {
-		color: #2b78e4;
+		color: map-get($colors, deep-blue);
 	}
 }
 
 .further {
 	display: inline;
-	color: #2b78e4;
+	color: map-get($colors, deep-blue);
 }
 
 .furtherText {
@@ -149,7 +154,11 @@ h2 {
 
 footer {
 	color: #085394;
-	background-color: #9fc5f8;
+	background-color: map-get(
+		$colors,
+		background-blue
+	);
+	// looks into the colors variable and grabs the value with the key "background-blue"
 	border: solid 3px #999999;
 	border-radius: 0.5em;
 	text-align: center;
@@ -269,7 +278,10 @@ footer {
 
 @media only screen and (min-device-width: 1220px) {
 	body {
-		background: #9fc5f8;
+		background: map-get(
+			$colors,
+			background-blue
+		);
 		background-image: url(/assets/misc/pawprints-transparent.png),
 			url(/assets/misc/pawprints-transparent.png);
 		background-position: 150% 0, -10% 0;
@@ -323,7 +335,7 @@ footer {
 
 		a:hover {
 			font-weight: bolder;
-			color: rgb(173, 22, 148);
+			color: map-get($colors, hover-color);
 		}
 	}
 
@@ -401,7 +413,7 @@ footer {
 		}
 
 		.unique-image:hover .unique-header {
-			color: rgb(173, 22, 148);
+			color: map-get($colors, hover-color);
 			font-weight: bolder;
 		}
 
@@ -456,7 +468,7 @@ footer {
 
 	.further:hover {
 		font-weight: bolder;
-		color: rgb(173, 22, 148);
+		color: map-get($colors, hover-color);
 		cursor: pointer;
 	}
 
